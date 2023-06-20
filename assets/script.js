@@ -1,25 +1,25 @@
 
   const products= [
     {
-    name:"cherry",
+    name:'cherry',
     price: 6,
     quantity: 0,
     productId: 1,
-    image: "images/cherry.jpg",
+    image: 'images/cherry.jpg',
   }
 {
-  name: "orange",
+  name: 'orange',
   price: 6,
   quantity: 0,
   productId: 2,
-  image: "images/orange.jpg",
+  image: 'images/orange.jpg',
 }
 {
-{name: "strawberry",
+{name: 'strawberry',
 price: 6,
 quantity: 0,
 productId: 3,
-image: "images/strawberry",
+image: 'images/strawberry.jpg',
 }
 ];
 
