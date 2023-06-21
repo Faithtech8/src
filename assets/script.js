@@ -35,7 +35,7 @@ products.forEach(product)=> {}
 }
 });
 function increaseQuantity(productId) {
-products.forEach (product ) => {
+products.forEach (product )=> {
     if (product.productId == product)
     product.quantity +=1;
   });
