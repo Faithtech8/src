@@ -6,40 +6,40 @@
     quantity: 0,
     productId: 1,
     image: 'images/cherry.jpg',
-  }
+  },
 {
   name: 'orange',
   price: 6,
   quantity: 0,
   productId: 2,
   image: 'images/orange.jpg',
-}
-{
+},
+
+
 {name: 'strawberry',
 price: 6,
 quantity: 0,
 productId: 3,
 image: 'images/strawberry.jpg',
-}
+},
 ];
 
 let cart =[];
 
 
-function addProductToCart(productId)
-products.forEach(product => {
-  if (product.productId ==  products
+function addProductToCart(productId) {
+products.forEach(product )=> {
+  if (product.productId ==  products) {
     product.quantity += 1;
-    if (cart.includes (product))
-    cart.push(product);
+    if (cart.includes (product)) cart.push(product);
 }
-
-function increaseQuantity(productId) 
-  products.forEach(product => {
+});
+function increaseQuantity(productId) {
+products.forEach (product ) => {
     if (product.productId == product)
     product.quantity +=1;
-  }
-
+  });
+}
 
 
 
@@ -50,14 +50,16 @@ function increaseQuantity(productId)
 
 
 function decreaseQuantity(productId) {
-products.forEach(product) =>{
-  if (product.productId === productId){
+products.forEach(product) => {
+  if (product.productId === productId) {
     product.quantity-= 1;
-    if ((product.quantity === 0)){
+    if (product.quantity === 0) {
       if (index  !==-1) {
         cart.splice(lndex, 1);
       }
-    
+    }
+  }
+});
   
 }
 
@@ -68,15 +70,14 @@ products.forEach(product) =>{
   - if the function decreases the quantity to 0, the product is removed from the cart
 */
 function removeProductFromCart(productId) {
-  for (let i =0; i  = < cart.length;
-    i++) {
-     if (cart[[]i].productId === productId) {
+  for (let i =0; i  = < cart.length; i++) {
+     if (cart []i]. productId === productId) {
       cart.splice(i,1);
-      console.console.log( ('Remove product with productId'));
+      console.console.log( ('Remove product with productId');
       break;
      }
-
-
+    }
+  }
      
 }
 /* Create a function named removeProductFromCart that takes in the productId as an argument
@@ -84,14 +85,25 @@ function removeProductFromCart(productId) {
   - removeProductFromCart should update the product quantity to 0
   - removeProductFromCart should remove the product from the cart
 */
-
+function cartTotal() {
+  let cartTotal= 0;
+  cart.forEach ((item) => {
+    let itemTotal = item.price* item.quantity;
+    cartTotal += itemTotal; 
+  });
 /* Create a function named cartTotal that has no parameters
   - cartTotal should iterate through the cart to get the total of all products
   - cartTotal should return the sum of the products in the cart
 */
-function emptyCart
+function emptyCart() {
+  cart = {};
+}
 /* Create a function called emptyCart that empties the products from the cart */
 
+function pay(amount) {
+  let currentCartTotal = cartTotal();
+  let diff = amount-totalPaid();
+  return diff;
 }
 /* Create a function named pay that takes in an amount as an argument
   - pay will return a negative number if there is a remaining balance
