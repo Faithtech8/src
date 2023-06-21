@@ -28,14 +28,14 @@ let cart =[];
 
 
 function addProductToCart(productId) {
-products.forEach(product)=> {}
+products.forEach(product) => {
   if (product.productId ==  products) {
     product.quantity += 1;
     if (cart.includes (product)) cart.push(product);
 }
 });
 function increaseQuantity(productId) {
-products.forEach (product )=> {
+products.forEach (product ) => {
     if (product.productId == product)
     product.quantity +=1;
   });
