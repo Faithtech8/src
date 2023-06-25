@@ -1,45 +1,45 @@
 
   const products= [
-    {
-    name:'cherry',
-    price: 6,
-    quantity: 0,
-    productId: 1,
-    image: 'images/cherry.jpg',
-  },
+{
+name: 'cherry',
+price: 6,
+quantity: 0,
+product Id: 1,
+image: 'images/cherry.jpg',
+},
 {
   name: 'orange',
   price: 6,
   quantity: 0,
-  productId: 2,
+  product Id: 2,
   image: 'images/orange.jpg',
 },
-
-
-{name: 'strawberry',
-price: 6,
-quantity: 0,
-productId: 3,
-image: 'images/strawberry.jpg',
+{
+  name: 'strawberry',
+  price: 6,
+  quantity: 0,
+  product Id: 3
+  image: 'images/strawberry.jpg',
 },
-];
+  ];
 
 let cart =[];
 
 
 function addProductToCart(productId) {
-products.forEach(product) => {
+products.forEach (product)=> {
   if (product.productId ==  products) {
     product.quantity += 1;
     if (cart.includes (product)) cart.push(product);
 }
-});
+};
+
 function increaseQuantity(productId) {
 products.forEach (product ) => {
     if (product.productId == product)
     product.quantity +=1;
-  });
-}
+  };
+
 
 
 
@@ -59,9 +59,8 @@ products.forEach(product) => {
       }
     }
   }
-});
+};
   
-}
 
 
 /* Create a function named decreaseQuantity that takes in the productId as an argument
@@ -85,7 +84,7 @@ function removeProductFromCart(productId) {
   - removeProductFromCart should update the product quantity to 0
   - removeProductFromCart should remove the product from the cart
 */
-function cartTotal() {
+function cartTotal() 
   let cartTotal= 0;
   cart.forEach ((item) => {
     let itemTotal = item.price* item.quantity;
