@@ -4,21 +4,21 @@
 name: 'cherry',
 price: 6,
 quantity: 0,
-product Id: 1,
+productId: 1,
 image: 'images/cherry.jpg',
 },
 {
   name: 'orange',
   price: 6,
   quantity: 0,
-  product Id: 2,
+  productId: 2,
   image: 'images/orange.jpg',
 },
 {
   name: 'strawberry',
   price: 6,
   quantity: 0,
-  product Id: 3
+  productId: 3,
   image: 'images/strawberry.jpg',
 },
   ];
@@ -27,18 +27,19 @@ let cart =[];
 
 
 function addProductToCart(productId) {
-products.forEach (product)=> {
+products.forEach (product=> {
   if (product.productId ==  products) {
     product.quantity += 1;
     if (cart.includes (product)) cart.push(product);
-}
+}})
 };
 
 function increaseQuantity(productId) {
-products.forEach (product ) => {
+products.forEach (product => {
     if (product.productId == product)
     product.quantity +=1;
-  };
+  });
+}
 
 
 
@@ -50,7 +51,7 @@ products.forEach (product ) => {
 
 
 function decreaseQuantity(productId) {
-products.forEach(product) => {
+products.forEach(product => {
   if (product.productId === productId) {
     product.quantity-= 1;
     if (product.quantity === 0) {
@@ -58,7 +59,7 @@ products.forEach(product) => {
         cart.splice(lndex, 1);
       }
     }
-  }
+}})
 };
   
 
@@ -69,14 +70,14 @@ products.forEach(product) => {
   - if the function decreases the quantity to 0, the product is removed from the cart
 */
 function removeProductFromCart(productId) {
-  for (let i =0; i  = < cart.length; i++) {
-     if (cart []i]. productId === productId) {
+  for (let i =0; i  <= cart.length; i++) {
+     if (cart[i]. productId === productId) {
       cart.splice(i,1);
-      console.console.log( ('Remove product with productId');
+    console.log ('Remove product with productId');
       break;
      }
     }
-  }
+  
      
 }
 /* Create a function named removeProductFromCart that takes in the productId as an argument
