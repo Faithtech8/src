@@ -85,12 +85,13 @@ function removeProductFromCart(productId) {
   - removeProductFromCart should update the product quantity to 0
   - removeProductFromCart should remove the product from the cart
 */
-function cartTotal() 
-  let cartTotal= 0;
-  cart.forEach ((item) => {
-    let itemTotal = item.price* item.quantity;
-    cartTotal += itemTotal; 
+function cartTotal () {}
+  let cartTotal = 0;
+  cart.forEach (item => {
+    let itemTotal =item.price * item.quantity;
+    cartTotal +=itemTotal;
   });
+  l
 /* Create a function named cartTotal that has no parameters
   - cartTotal should iterate through the cart to get the total of all products
   - cartTotal should return the sum of the products in the cart
