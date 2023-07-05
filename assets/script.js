@@ -1,4 +1,3 @@
-
   const products= [
 {
 name: 'cherry',
@@ -85,7 +84,7 @@ function removeProductFromCart(productId) {
   - removeProductFromCart should update the product quantity to 0
   - removeProductFromCart should remove the product from the cart
 */
-function cartTotal () {}
+function cartTotal () 
   let cartTotal = 0;
   cart.forEach (item => {
     let itemTotal =item.price * item.quantity;
