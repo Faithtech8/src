@@ -1,4 +1,4 @@
-const cart = require('../src/assets/script.js');
+const cart = require('../assets/script.js');
 
 describe('Cart Functionality Tests', () => {
     let product1 = cart.products[1];
