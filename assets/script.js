@@ -68,7 +68,7 @@ function removeProductFromCart(productId) {
     if (cart[i].productId === productId) {
       cart[i].quantity = 0;
       cart.splice(i, 1);
-      console.log("Remove product with productId");
+
       break;
     }
   }
@@ -109,8 +109,6 @@ function pay(amount) {
   - pay will return a positive number if money should be returned to customer
 */
 
-/* Place stand out suggestions here (stand out suggestions can be found at the bottom of the project rubric.)*/
-
 /* The following is for running unit tests. 
    To fully complete this project, it is expected that all tests pass.
    Run the following command in terminal to run tests
@@ -127,6 +125,4 @@ module.exports = {
   cartTotal,
   pay,
   emptyCart,
-  /* Uncomment the following line if completing the currency converter bonus */
-  // currency
 };
